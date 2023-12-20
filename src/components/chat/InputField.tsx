@@ -12,6 +12,7 @@ type InputFieldProps = {
 export default function InputField(props: InputFieldProps) {
   const [message, setMessage] = useState("");
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleChange = (event: any) => {
     const value = event.target.value;
     setMessage(value);
