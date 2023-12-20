@@ -2,13 +2,19 @@
 
 import * as React from 'react';
 
+import useGetMessages from '@/lib/getMessages';
 import { sendMessage } from '@/lib/sendMessage';
 
 function handleSendMessage(text: string) {
   sendMessage(text, 'Unknown');
 }
 
+import Box from '@/components/chat/Box';
+import ChatBubble from '@/components/chat/ChatBubble';
+import ChatContainer from '@/components/chat/ChatContainer';
+import InputField from '@/components/chat/InputField';
 import Title from '@/components/title/Title';
+import TitleHighlight from '@/components/title/TitleHighlight';
 
 /**
  * Diese Komponenten stehen dir zur Verfügung.
